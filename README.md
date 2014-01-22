@@ -12,8 +12,12 @@
 >	查找 EFI 的资料, 配置 EDKII 开发环境, EFI 的 Hello World, 暂时编译错误. [>>>][2]
 
 #### [Day3][3]
->	
+>	edk2 暂不支持 Mavericks, 坑暂时留着. 继续用 Legacy BIOS. [>>>][3]
+
+#### [Day4][4]
+>	使用 Makefile, 完成启动区的编写.
 
 [1]: http://gncy2013.github.io/2014/01/19/SOS-Day1.html
 [2]: http://gncy2013.github.io/2014/01/20/SOS-Day2.html
 [3]: http://gncy2013.github.io/2014/01/21/SOS-Day3.html
+[4]: http://gncy2013.github.io/2014/01/22/SOS-Day4.html
