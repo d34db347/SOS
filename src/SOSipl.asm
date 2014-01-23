@@ -1,7 +1,8 @@
 	org	07c00h				;程序装载地址
-	jmp	entry
-	db	090h
-	db	"SOSIPL"			;启动区名称
+	jmp	short entry
+	nop
+	;db	090h
+	db	"SOSIPLXX"			;启动区名称,8字节
 	dw	512					;每个扇区大小512字节
 	db	1					;簇大小1个扇区
 	dw	1					;FAT起始位置第一个扇区
@@ -16,9 +17,9 @@
 	dd	2880				;重写一次磁盘大小
 	db	0, 0, 029h			;
 	dd	0ffffffffh			;卷标号码
-	db	"SOS"				;磁盘名称
-	db	"FAT12"				;磁盘格式名称
-	times 18 db 0			;预留18个字节
+	db	"SmallOS0001"		;磁盘名称,11字节
+	db	"FAT12   "			;磁盘格式名称,8字节
+	;times 18 db 0			;预留18个字节
 
 entry:
 	mov	ax, 0				;初始化寄存器
@@ -89,5 +90,5 @@ msg:
 	db	0ah					;换行
 	db	0
 
-times	7dfeh-($-$$) db	0	;填充剩余空间使得生成文件为 512 字节
+times	510-($-$$) db	0	;填充剩余空间使得生成文件为 512 字节
 	dw	0xaa55

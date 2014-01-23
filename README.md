@@ -17,7 +17,17 @@
 #### [Day4][4]
 >	使用 Makefile, 完成启动区的编写.
 
+#### [Day5][5]
+>	修改 FAT 部分代码, 使镜像文件可在系统中装载.
+
 [1]: http://gncy2013.github.io/2014/01/19/SOS-Day1.html
 [2]: http://gncy2013.github.io/2014/01/20/SOS-Day2.html
 [3]: http://gncy2013.github.io/2014/01/21/SOS-Day3.html
 [4]: http://gncy2013.github.io/2014/01/22/SOS-Day4.html
+[5]: http://gncy2013.github.io/2014/01/23/SOS-Day5.html
+[6]: http://gncy2013.github.io/2014/01/24/SOS-Day6.html
+[7]: http://gncy2013.github.io/2014/01/25/SOS-Day7.html
+[8]: http://gncy2013.github.io/2014/01/26/SOS-Day8.html
+[9]: http://gncy2013.github.io/2014/01/27/SOS-Day9.html
+[10]: http://gncy2013.github.io/2014/01/28/SOS-Day10.html
+[11]: http://gncy2013.github.io/2014/01/29/SOS-Day11.html
