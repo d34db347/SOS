@@ -67,9 +67,9 @@ next:
 	cmp	ch, 10				;CYLS EQU 10
 	jb	readloop
 
-fin:
-	hlt						;CPU停止
-	jmp	fin					;无限循环
+;读取并执行SOS.sys
+	mov	[0ff0h], ch
+	jmp	0d800h
 
 error:
 	mov	si, msg
@@ -83,6 +83,10 @@ putloop:
 	mov	bx, 15				;字符颜色
 	int	10h					;调用显卡BIOS
 	jmp	putloop
+
+fin:
+	hlt						;CPU停止
+	jmp	fin					;无限循环
 
 msg:
 	db	0a0ah				;换行两次
